@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>80 лет Победы - Гомельские герои ВОВ</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.savehistory.by/upload/iblock/4fa/1q606evpr60l4ndwvsnlsmk9gp82xa8r.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #d32f2f;
+            border-bottom: 2px solid #d32f2f;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+            align-items: start;
+        }
+        .sidebar {
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+        .liberators-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+        .liberators-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .liberators-list strong {
+            color: #d32f2f;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .intro {
+            background-color: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+        }
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 20px 0;
+        }
+        .photo-gallery img {
+            width: calc(33.333% - 12px);
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            transition: transform 0.25s;
+        }
+        .photo-gallery img:hover {
+            transform: scale(1.03);
+        }
+        .hero-card {
+            display: flex;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .hero-image {
+            width: 180px;
+            height: 220px;
+            object-fit: cover;
+        }
+        .hero-content {
+            padding: 15px;
+            flex: 1;
+        }
+        .hero-title {
+            color: #d32f2f;
+            margin: 0 0 8px 0;
+            font-size: 1.1em;
+        }
+        .link-button {
+            display: inline-block;
+            background-color: #d32f2f;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 3px;
+            margin-top: 8px;
+            font-size: 0.85em;
+            transition: background-color 0.25s;
+        }
+        .link-button:hover {
+            background-color: #b71c1c;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+        @media (max-width: 992px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                order: -1;
+                margin-bottom: 30px;
+            }
+        }
+        @media (max-width: 768px) {
+            .hero-card {
+                flex-direction: column;
+            }
+            .hero-image {
+                width: 100%;
+                height: 180px;
+            }
+            .photo-gallery img {
+                width: calc(50% - 6px);
+                height: 120px;
+            }
+        }
+        .hero-content p {
+            margin: 5px 0;
+            font-size: 0.88em;
+            line-height: 1.4;
+        }
+        .hero-content strong {
+            font-size: 0.92em;
+        }
+
+        .alley-of-fame {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 2px solid #eee;
+}
+
+.alley-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.two-column {
+    columns: 2;
+    column-gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.two-column li {
+    padding: 6px 0;
+    font-size: 0.85em;
+    line-height: 1.4;
+    break-inside: avoid;
+}
+
+@media (max-width: 768px) {
+    .two-column {
+        columns: 1;
+    }
+    
+    .alley-image {
+        height: 150px;
+    }
+}
+.alley{
+    color: #d32f2f;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>80 лет Великой Победы</h1>
+            <p>Гомель помнит своих героев</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <main>
+                <section class="intro">
+                    <h2>Гомель в годы Великой Отечественной войны</h2>
+                    <p>22 июня 1941 года началась Великая Отечественная война, которая принесла неисчислимые страдания белорусскому народу. Гомель, как один из крупнейших городов Беларуси, оказался на пути немецко-фашистских захватчиков уже в первые дни войны.</p>
+                    <p>19 августа 1941 года после ожесточенных боев Гомель был оккупирован. За время оккупации, которая длилась более двух лет, город подвергся страшным разрушениям, а его жители - массовым репрессиям. Но гомельчане не сдавались - в городе и области активно действовало партизанское движение и подполье.</p>
+                    <p>26 ноября 1943 года в результате Гомельско-Речицкой наступательной операции город был освобожден войсками Белорусского фронта под командованием К.К. Рокоссовского. Эта операция стала важным этапом в освобождении Беларуси.</p>
+                    
+                    <h3>Фотографии военного Гомеля</h3>
+                    <div class="photo-gallery">
+                        <img src="https://street.gomelhistory.by/wp-content/gallery/gomel-war1/1943_04.jpg" alt="">
+                        <img src="https://images.mir24.tv/WIZo8_DCDUeHfBvX3T6g52qrr8BPO4pnuGMgo6Zh24c/q:85/w:865/h:500/c:5000:2941:nowe:169:0/rt:fill-down/czM6Ly9taXIyNC10di9tZWRpYS9BcnRpY2xlL2ltYWdlL2RiNGM4ODY2LTFmOTgtNTUxNC05MjI4LTZhMjRkZTM0MTY1ZC83NDc0YjFkZDdhM2QxYmJlMTNkMWVlNjA5NWNkZmY5MWIyY2Q4OWMzNmQ5NzJiY2ZkZDcxYzIzYzZlZTM4YjQ3LmpwZw.webp" alt="">
+                        <img src="https://spartak.by/upload/medialibrary/c6b/fakty_genotsida_v_gorode_Gomele_8.jpg" alt="">
+                        <img src="http://wwii.space/wp-content/uploads/2019/09/image029-11-e1569055177318.jpg" alt="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4_coivf4dv4Yir_ZtVP7ueLOaqeY3en_isQ&s" alt="">
+                        <img src="https://newsgomel.by/upload/resize_cache/webp/sotbit.htmleditoraddition/18c/l5ng1ntd1hg3k6h8x5hc0wlvfpmku6ev.webp" alt="">
+                    </div>
+                    
+                    <h3>Полезные ссылки о ВОВ в Беларуси</h3>
+                    <p>
+                        <a href="https://ru.wikipedia.org/wiki/Великая_Отечественная_война" class="link-button" target="_blank">ВОВ в Википедии</a>
+                        <a href="https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F" class="link-button" target="_blank">Оборона Гомеля</a>
+                        <a href="https://memory.mil.by/" class="link-button" target="_blank">Книга Памяти РБ</a>
+                        <a href="https://archives.gov.by/home/tematicheskie-razrabotki-arhivnyh-dokumentov-i-bazy-dannyh/istoricheskie-sobytiya/velikaya-otechestvennaya-vojna-belarus" class="link-button" target="_blank">Архивы Беларуси</a>
+                    </p>
+                </section>
+
+                <section class="heroes">
+                    <h2>Уроженцы Гомельской области и Герои ВОВ</h2>
+                        
+<!-- Барыкин Емельян Игнатьевич -->
+            <div class="hero-card">
+                <img src="https://person.goub.by/wp-content/uploads/2016/11/Барыкин-Е.jpg" 
+                     alt="Барыкин Емельян Игнатьевич" 
+                     class="hero-image">
+                <div class="hero-content">
+                    <h3 class="hero-title">Барыкин Емельян Игнатьевич</h3>
+                    
+                    <p><strong>1902-1951</strong><br>
+                    Родился в д. Тростная (Брянская обл.)<br>
+                    Звание: <em>Полковник</em></p>
+            
+                    <p><strong>Связь с Гомелем:</strong><br>
+                    • Организатор обороны города (1941)<br>
+                    • Руководитель партизанского подполья<br>
+                    • После войны восстанавливал город</p>
+            
+                    <p><strong>Основные достижения:</strong><br>
+                    - 58 уничтоженных эшелонов<br>
+                    - Удержал переправу через Березину<br>
+                    - Герой СССР (1944)</p>
+
+                    <p><strong>Награды:</strong><br>
+                     - Герой СССР (1944)</p>
+                    <a href="https://ru.wikipedia.org/wiki/Барыкин,_Емельян_Игнатьевич" 
+                    class="link-button" target="_blank">Подробнее</a>
+                </div>
+            </div>
+        
+<!-- Басенков Пётр Харитонович -->
+<div class="hero-card">
+    <img src="https://app.sqilsoft.by/bp/api/attachments/file/1431984" 
+         alt="Басенков Пётр Харитонович" 
+         class="hero-image">
+    <div class="hero-content">
+        <h3 class="hero-title">Басенков Пётр Харитонович</h3>
+        
+        <p><strong>1908-1969</strong><br>
+        Родился в д. Вылево (Могилёвская губ.)<br>
+        Звание: <em>Старший сержант</em></p>
+
+        <p><strong>Связь с Гомелем:</strong><br>
+        • Работал слесарем до войны<br>
+        • Жил в Гомеле и Костюковке после войны<br>
+        • Именем названы улицы в городе</p>
+
+        <p><strong>Основные достижения:</strong><br>
+        - Уничтожил 3 танка и САУ за один бой<br>
+        - Участник Сталинградской и Курской битв<br>
+
+        <p><strong>Награды:</strong><br>
+        - Герой СССР (1945)</p>
+        <a href="https://ru.wikipedia.org/wiki/Басенков,_Пётр_Харитонович" 
+        class="link-button" target="_blank">Подробнее</a>
+    </div>
+</div>
+        
+<!-- Бирбраер Евгений Абрамович -->
+<div class="hero-card">
+    <img src="https://www.jewmil.com/sites/default/files/styles/max_181x241/public/2021-04/birenboym_yakov_abram_0.jpg?itok=UbEDH3-5" 
+         alt="Бирбраер Евгений Абрамович" 
+         class="hero-image">
+    <div class="hero-content">
+        <h3 class="hero-title">Бирбраер Евгений Абрамович</h3>
+        
+        <p><strong>1912-1943</strong><br>
+        Родился в <em>Гомеле</em><br>
+        Звание: <em>Гвардии старший лейтенант</em></p>
+
+        <p><strong>Связь с Гомелем:</strong><br>
+        • Уроженец города<br>
+        • Именная стела на Аллее Героев<br>
+        • Учился и работал в Гомеле до войны</p>
+
+        <p><strong>Основные достижения:</strong><br>
+        - Геройски форсировал Днепр (1943)<br>
+        - Отбил 12 контратак у плацдарма<br>
+        - Участник Сталинградской битвы</p>
+
+        <p><strong>Награды:</strong><br>
+        - Герой Советского Союза (посмертно)<br>
+        - Орден Ленина</p>
+
+        <a href="https://ru.wikipedia.org/wiki/Бирбраер,_Евгений_Абрамович" 
+        class="link-button" target="_blank">Подробнее</a>
+    </div>
+</div>
+        
+<!-- Ветошкин Виктор Дмитриевич -->
+<div class="hero-card">
+    <img src="https://encyclopedia.mil.ru/download.sx?objId=/vetoshkin].jpg@cmsFile.images&attr=body" 
+         alt="Ветошкин Виктор Дмитриевич" 
+         class="hero-image">
+    <div class="hero-content">
+        <h3 class="hero-title">Ветошкин Виктор Дмитриевич</h3>
+        
+        <p><strong>1925-2015</strong><br>
+        Родился в <em>Гомеле</em><br>
+        Звание: <em>Старшина</em></p>
+
+        <p><strong>Связь с Гомелем:</strong><br>
+        • Уроженец города<br>
+        • Почётный гражданин Гомеля (2002)<br>
+        • Работал на фабрике "Полеспечать"</p>
+
+        <p><strong>Основные достижения:</strong><br>
+        - Полный кавалер ордена Славы<br>
+        - Участвовал в освобождении Беларуси и Польши<br>
+        - Уничтожил 13 огневых точек в Берлинской операции</p>
+
+        <p><strong>Награды:</strong><br>
+        - Ордена Славы I-III степеней<br>
+        - Орден Ленина (1977)</p>
+
+        <a href="https://ru.wikipedia.org/wiki/Ветошкин,_Виктор_Дмитриевич" 
+        class="link-button" target="_blank">Подробнее</a>
+    </div>
+</div>
+        
+ <!-- Гамзин Владимир Васильевич -->
+<div class="hero-card">
+    <img src="https://person.goub.by/wp-content/uploads/2016/12/%D0%93%D0%B0%D0%BC%D0%B7%D0%B8%D0%BD-%D0%92.jpg" 
+         alt="Гамзин Владимир Васильевич" 
+         class="hero-image">
+    <div class="hero-content">
+        <h3 class="hero-title">Гамзин Владимир Васильевич</h3>
+        
+        <p><strong>1919-2001</strong><br>
+        Родился в с. Акатная Маза (Саратовская обл.)<br>
+        Звание: <em>Подполковник</em></p>
+
+        <p><strong>Связь с Гомелем:</strong><br>
+        • Жил и работал после войны<br>
+        • Трудился на заводе "Гомсельмаш"<br>
+        • Почётный стела на Аллее Героев</p>
+
+        <p><strong>Основные достижения:</strong><br>
+        - 447 боевых вылетов за войну<br>
+        - Участвовал в Сталинградской битве<br>
+        - Освобождал Беларусь и Прибалтику</p>
+
+        <p><strong>Награды:</strong><br>
+        - Герой Советского Союза (1945)<br>
+        - 2 ордена Красного Знамени</p>
+
+        <a href="https://ru.wikipedia.org/wiki/Гамзин,_Владимир_Васильевич" 
+        class="link-button" target="_blank">Подробнее</a>
+    </div>
+</div>
+        
+<!-- Гельман Полина Владимировна -->
+<div class="hero-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Polina_Gelman.png/250px-Polina_Gelman.png" 
+         alt="Гельман Полина Владимировна" 
+         class="hero-image">
+    <div class="hero-content">
+        <h3 class="hero-title">Гельман Полина Владимировна</h3>
+        
+        <p><strong>1919-2005</strong><br>
+        Родилась в г. Бердичев (Украина)<br>
+        Звание: <em>Гвардии старший лейтенант</em></p>
+
+        <p><strong>Связь с Гомелем:</strong><br>
+        • Выросла и училась в Гомеле<br>
+        • Улица её имени в новом микрорайоне<br>
+        • Мемориальные доски на школе и ДОСААФ</p>
+
+        <p><strong>Основные достижения:</strong><br>
+        - 860 боевых вылетов на ПО-2 ("ночные ведьмы")<br>
+        - Участвовала в битвах за Кавказ и Берлин<br>
+        - Доставляла грузы десантникам в Керчь</p>
+
+        <p><strong>Награды:</strong><br>
+        - Герой Советского Союза (1946)<br>
+        - 2 ордена Красного Знамени</p>
+
+        <a href="https://ru.wikipedia.org/wiki/Гельман,_Полина_Владимировна" 
+        class="link-button" target="_blank">Подробнее</a>
+    </div>
+</div>
+        
+<!-- Цариков Борис Андреевич -->
+<div class="hero-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXSoUw--0eg26lgX3WRJf-YKC6vU2Z870oEg&s" 
+         alt="Цариков Борис Андреевич" 
+         class="hero-image">
+    <div class="hero-content">
+        <h3 class="hero-title">Цариков Борис Андреевич</h3>
+        
+        <p><strong>1925-1943</strong><br>
+        Родился в <em>Гомеле</em><br>
+        Звание: <em>Младший сержант</em></p>
+
+        <p><strong>Связь с Гомелем:</strong><br>
+        • Уроженец города<br>
+        • Его имя носит школа №25<br>
+        • Мемориальная доска на здании школы</p>
+
+        <p><strong>Основные достижения:</strong><br>
+        - В 17 лет форсировал Днепр (1943)<br>
+        - Установил Красное знамя на плацдарме<br>
+        - Совершил 5 рейдов с донесениями</p>
+
+        <p><strong>Награды:</strong><br>
+        - Герой Советского Союза (1943)<br>
+        - Орден Красного Знамени</p>
+
+        <a href="https://ru.wikipedia.org/wiki/Цариков,_Борис_Андреевич" 
+        class="link-button" target="_blank">Подробнее</a>
+    </div>
+</div>
+
+<!-- Шандалов Юрий Абрамович -->
+<div class="hero-card">
+    <img src="https://upload.wikimedia.org/wikipedia/ru/e/e5/Shandalov_YuA.jpg" 
+         alt="Шандалов Юрий Абрамович" 
+         class="hero-image">
+    <div class="hero-content">
+        <h3 class="hero-title">Шандалов Юрий Абрамович</h3>
+        
+        <p><strong>1923-1945</strong><br>
+        Родился в <em>Гомеле</em><br>
+        Звание: <em>Старший лейтенант</em></p>
+
+        <p><strong>Связь с Гомелем:</strong><br>
+        • Учился в школе №2<br>
+        • Улица его имени в Новобелицком районе<br>
+        • Мемориальная доска на здании школы</p>
+
+        <p><strong>Основные достижения:</strong><br>
+        - Командовал ротой при штурме Берлина<br>
+        - Отбил 7 контратак у Грос Нойендорфа<br>
+        - Погиб за 23 дня до Победы</p>
+
+        <p><strong>Награды:</strong><br>
+        - Герой Советского Союза (1946, посмертно)<br>
+        - Орден Красного Знамени</p>
+
+        <a href="https://ru.wikipedia.org/wiki/Шандалов,_Юрий_Абрамович" 
+        class="link-button" target="_blank">Подробнее</a>
+    </div>
+</div>
+
+<!-- Катунин Илья Борисович -->
+<div class="hero-card">
+    <img src="https://morsouyz.by/sites/default/files/styles/mi/public/ilya_borisovich_katunin_1.jpg?itok=rWu7ksBd" 
+         alt="Катунин Илья Борисович" 
+         class="hero-image">
+    <div class="hero-content">
+        <h3 class="hero-title">Катунин Илья Борисович</h3>
+        
+        <p><strong>1908-1944</strong><br>
+        Родился в <em>Гомеле</em><br>
+        Звание: <em>Капитан авиации</em></p>
+
+        <p><strong>Связь с Гомелем:</strong><br>
+        • Работал на заводе "Пролетарий"<br>
+        • Улица его имени в городе<br>
+        • Мемориальная доска на заводе</p>
+
+        <p><strong>Основные достижения:</strong><br>
+        - 12 боевых вылетов в Заполярье<br>
+        - Потопил 4 вражеских судна<br>
+        - Совершил огненный таран в 1944</p>
+
+        <p><strong>Награды:</strong><br>
+        - Герой СССР (1944, посмертно)<br>
+        - Орден Красного Знамени</p>
+
+        <a href="https://ru.wikipedia.org/wiki/Катунин,_Илья_Борисович" 
+        class="link-button" target="_blank">Подробнее</a>
+    </div>
+</div>
+                    
+                </section>
+            </main>
+
+            <aside class="sidebar">
+                <h2>Освободители Гомеля (Генералы)</h2>
+                <ul class="liberators-list">
+                    <li>
+                        <a href="https://ru.wikipedia.org/wiki/Рокоссовский,_Константин_Константинович" target="_blank"class="alley">
+                            <strong>Рокоссовский К.К.</strong>
+                        </a>
+                        Командующий Белорусским фронтом, Маршал Советского Союза
+                    </li>
+                    <li>
+                        <a href="https://ru.wikipedia.org/wiki/Горбатов,_Александр_Васильевич" target="_blank"class="alley">
+                            <strong>Горбатов А.В.</strong>
+                        </a>
+                        Командующий 3-й армией, генерал-полковник
+                    </li>
+                    <li>
+                        <a href="https://ru.wikipedia.org/wiki/Руденко,_Сергей_Игнатьевич" target="_blank"class="alley">
+                            <strong>Руденко С.И.</strong>
+                        </a>
+                        Командующий 16-й воздушной армией, генерал-полковник авиации
+                    </li>
+                    <li>
+                        <a href="https://ru.wikipedia.org/wiki/Романенко,_Прокофий_Логвинович" target="_blank"class="alley">
+                            <strong>Романенко П.Л.</strong>
+                        </a>
+                        Командир 1-го гвардейского танкового корпуса, генерал-лейтенант
+                    </li>
+                    <li>
+                        <a href="https://ru.wikipedia.org/wiki/Федюнинский,_Иван_Иванович" target="_blank"class="alley">
+                            <strong>Федюнинский И.И.</strong>
+                        </a>
+                        Командующий 11-й армией, генерал-полковник
+                    </li>
+                </ul>
+
+                <section class="alley-of-fame">
+                    <h2><a href="https://gomel.gov.by/ru/content/gomel/alleya-geroev-21/" target="_blank" class="alley">Аллея Славы Гомеля</a></h2>
+                    <img src="https://gomel.gov.by/upload/medialibrary/066/06625515db95712a74d67e14c56eb4e8.jpg" 
+                         alt="Аллея Славы в Гомеле" 
+                         class="alley-image">
+                    <div class="-list">
+                        <ul class="two-column">
+                            <li>Баженов Анатолий Васильевич</li>
+                            <li>Барыкин Емельян Игнатьевич</li>
+                            <li>Басенков Петр Харитонович</li>
+                            <li>Бирбраер Евгений Абрамович</li>
+                            <li>Бородин Тимофей Степанович</li>
+                            <li>Буйневич Павел Николаевич</li>
+                            <li>Ветошкин Виктор Дмитриевич</li>
+                            <li>Гамзин Владимир Васильевич</li>
+                            <li>Гельман Полина Владимировна</li>
+                            <li>Головачев Павел Яковлевич</li>
+                            <li>Гущин Борис Петрович</li>
+                            <li>Денисенко Григорий Кириллович</li>
+                            <li>Дьяков Иосиф Иванович</li>
+                            <li>Жолудев Наум Ильич</li>
+                            <li>Зебницкий Николай Васильевич</li>
+                            <li>Исаченко Александр Лаврентьевич</li>
+                            <li>Калач Борис Филиппович</li>
+                            <li>Калеников Игорь Емельянович</li>
+                            <li>Катунин Илья Борисович</li>
+                            <li>Кожар Илья Павлович</li>
+                            <li>Кожушкин Николай Алексеевич</li>
+                            <li>Король Григорий Яковлевич</li>
+                            <li>Котченко Федор Петрович</li>
+                            <li>Кремер Семен Давидович</li>
+                            <li>Лебедев Николай Афанасьевич</li>
+                            <li>Лизюков Александр Ильич</li>
+                            <li>Лизюков Петр Ильич</li>
+                            <li>Мещеряков Павел Матвеевич</li>
+                            <li>Михаленко Константин Фомич</li>
+                            <li>Мухин Василий Филиппович</li>
+                            <li>Невский Николай Арсентьевич</li>
+                            <li>Нестерович Павел Владимирович</li>
+                            <li>Осипов Кирилл Никифорович</li>
+                            <li>Пенязьков Дмитрий Никандрович</li>
+                            <li>Серёгин Василий Георгиевич</li>
+                            <li>Синчуков Петр Сидорович</li>
+                            <li>Склезнев Георгий Михайлович</li>
+                            <li>Стрекалов Петр Семенович</li>
+                            <li>Филимонов Александр Андреевич</li>
+                            <li>Цариков Борис Андреевич</li>
+                            <li>Шандалов Юрий Абрамович</li>
+                        </ul>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© Сделано Максимом Пинчуком Игоревичем (Ученик СШ №5 г.Гомеля) </p>
+            <p>К 80-летию освобождения Беларуси от немецко-фашистских захватчиков</p>
+        </div>
+    </footer>
+</body>
+</html>
